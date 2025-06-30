@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Blog</title>
+    <link rel = "stylesheet" href = "style.css">
+    
+
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <span>Hello</span>
+        <strong>Important</strong>
+        <em>Emphasized text</em>
+        <p>This is a <span style="color:red;">highlighted</span> word.</p>
+
+        <div style="background-color:lightgray; padding:10px;">
+            <h2>Section Title</h2>
+            <p>Grouped content goes here.</p>
+        </div>
+
+        <!-- Image 2 -->
+        <img 
+        src="https://i0.wp.com/problogger.com/wp-content/uploads/2017/09/0a006835-9b03-4e47-95b7-86c95359896a_pasted20image200.png?resize=606%2C675&ssl=1" 
+        alt="Image 2" 
+        style="display: block; margin: 0 auto; max-width: 100%; height: auto;"><br>
+
+        <!-- Image 3 -->
+        <img 
+        src="https://blogcontent.yola.net/blog/wp-content/uploads/2014/03/Adding-relevent-information-to-your-newsletter.png" 
+        alt="Image 3" 
+        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+
+    </main>
+
+    <footer>
+        <fieldSet>
+            <legend><h3>Contact Info</h3></legend>
+            <pre>
+        <label for ="phone">Phone: </label>
+        <input type = "text" id="phone" name = "phone">
+
+        <label for = "Country">Country:</label>
+        <select id = "country" name ="country">
+
+        <option value ="in">India</option>
+        <option value = "us">USA</option>
+        </select>
+        </pre>
+        </fieldSet>
+        
+        <form action="/submit" method="post" width = "500">
+        <fieldset><legend><h3>Contact Us</h3></legend>
+            
+        <div class="name-container">
+            <div class="input-group">
+                <label for="firstname">First Name:</label><br>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="input-group">
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+        </div>
+
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required>
+            </p>
+
+            <p>Select Gender:
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+            
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </p>
+
+            <p>
+                <label for="date">Date of Birth:</label><br>
+                <input type="date" id="date" name="Date of Birth" required>
+            </p>
+        
+        </fieldset>
+        <fieldset>
+            <legend><h3>Message & Preferences</h3></legend>
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your message here..." required></textarea>
+            </p>
+
+            <p><input type = "checkbox" id = "checkbox" name ="checkbox" required>
+                Subscribe to our newsletter</p>
+        
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset form</button>
+    </form>
+        <p>&copy; Reserved</p>
+    </footer>
+</body>
+</html>
